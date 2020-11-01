@@ -10,7 +10,7 @@
    
    let input = document.getElementById('input').value;
    
-let a = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=4773fba74183cda39fffba0be46b29fb`).then(data=>{
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=4773fba74183cda39fffba0be46b29fb`).then(data=>{
   return data.json();
 }).then(data1=>{
   console.log(data1);
