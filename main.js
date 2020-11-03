@@ -59,13 +59,13 @@ fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&ap
  humidity.innerHTML = "Humidity : " + humid + "%";
  pressure.innerHTML = "Pressure : " +  press + " hPa";
  feel.innerHTML = "feels_like " + feels_like +  " °C";
-}).catch(function(){
-  console.log("error");
-   swal("Incorrect City Name!", "Check The Name Of City", "error")
+})
+
+
    
-  setTimeout(function() {
-    location.reload()
-  }, 3000); 
+
+
+
    
   
       
